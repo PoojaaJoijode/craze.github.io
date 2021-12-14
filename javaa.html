@@ -1,0 +1,61 @@
+<html>
+<style>
+body{
+background-color:LightCyan ;
+}
+h1{
+position:absolute;
+left:35%;
+color:RoyalBlue ;
+}
+h2{
+color:RoyalBlue ;
+position: absolute;
+top: 35%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+h6{
+position: absolute;
+top:40%;
+left:48%;
+}
+h2{
+position: relative;
+min-height: 100vh;
+padding: 50px 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+</style>
+<script>
+function validateform(){
+var name=document.myform.name.value;
+var password=document.myform.password.value;
+
+if (name==null || name==""){
+  alert("Name can't be blank");
+  return false;
+}else if(password.length<6){
+  alert("Password must be at least 6 characters long.");
+  return false;
+  }
+}
+</script>
+<body>
+<h1>Register to explore our website now</h1>
+<h2>
+<form name="myform" method="post" action="file:///D:/FYBVOC%20SD/z%20html%20pages/websitee.ht" onsubmit="return validateform()" >
+Name:<input type="text" name="name"><br/>
+Password:<input type="password" name="password"><br/></h2>
+<h6><input type="submit" value="register"><h6>
+</form>
+</body>
+</html>
+
+
+
+
